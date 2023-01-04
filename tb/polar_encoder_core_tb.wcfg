@@ -3,31 +3,22 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="polar_encoder_core_tb_behav.wdb" id="1">
+      <db_ref path="polar_encoder_core_tb_snapshot.wdb" id="1">
          <top_modules>
-            <top_module name="glbl" />
             <top_module name="polar_encoder_core_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="9,985 ps"></ZoomStartTime>
-      <ZoomEndTime time="10,003 ps"></ZoomEndTime>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="8,100 ps"></ZoomEndTime>
       <Cursor1Time time="10,000 ps"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="404"></NameColumnWidth>
-      <ValueColumnWidth column_width="184"></ValueColumnWidth>
+      <ValueColumnWidth column_width="178"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="4" />
-   <wvobject type="array" fp_name="/polar_encoder_core_tb/in">
-      <obj_property name="ElementShortName">in[31:0]</obj_property>
-      <obj_property name="ObjectShortName">in[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/polar_encoder_core_tb/out">
-      <obj_property name="ElementShortName">out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">out[31:0]</obj_property>
-   </wvobject>
    <wvobject type="array" fp_name="/polar_encoder_core_tb/N">
       <obj_property name="ElementShortName">N[31:0]</obj_property>
       <obj_property name="ObjectShortName">N[31:0]</obj_property>
@@ -35,7 +26,6 @@
    <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask">
       <obj_property name="ElementShortName">mask[4:0][31:0]</obj_property>
       <obj_property name="ObjectShortName">mask[4:0][31:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask[4]">
          <obj_property name="ElementShortName">[4][31:0]</obj_property>
          <obj_property name="ObjectShortName">[4][31:0]</obj_property>
@@ -55,7 +45,34 @@
       <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask[0]">
          <obj_property name="ElementShortName">[0][31:0]</obj_property>
          <obj_property name="ObjectShortName">[0][31:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
       </wvobject>
+      <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask[4]">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask[3]">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask[2]">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask[1]">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/polar_encoder_core_tb/dut/mask[0]">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/polar_encoder_core_tb/polar_input">
+      <obj_property name="ElementShortName">polar_input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">polar_input[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/polar_encoder_core_tb/polar_output">
+      <obj_property name="ElementShortName">polar_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">polar_output[31:0]</obj_property>
    </wvobject>
 </wave_config>
