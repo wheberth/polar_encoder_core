@@ -1,0 +1,39 @@
+# Vivado project
+sim/*_prj/
+
+
+# Log files
+**/*.log
+**/*.jou
+**/*.rpt
+**/*.vdi
+
+## sim dump
+**/*.vcd
+**/*.saif
+**/*.tcf
+**/*.wdb
+
+## dirs
+**/vivado.cache/
+**/vivado.hw/
+**/vivado.ip_user_files/
+**/vivado.runs/
+**/vivado.sim/
+
+# for Xilinx Vivado|ISE
+**/.Xil/
+**/.cache/
+**/tab_*/
+**/webtalk.*
+**/vivado_pid*.str
+**/hs_err_pid*
+**/xelab.*
+**/xsim.*
+**/xvlog.*
+**/*.cache
+**/*.sim
+**/*.runs
+**/*.hw
+**/*.backup.*
+**/*.debug
