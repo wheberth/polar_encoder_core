@@ -1,5 +1,4 @@
 PRJROOT = $(abspath ../)
-# CONTAINER ?= vivado:2022.1
 export PRJROOT
 
 # Sources
@@ -54,11 +53,12 @@ project: $(SRCS) $(SIM_SRCS) ../tcl/make_project.tcl
 
 showsrc:
 	@echo ============================================
-	@echo HDL Sources: $(SRCS)
-	@echo SIM sources: $(SIM_SRCS)
-	@echo TOP Entity:  $(TOP)
-	@echo TOP Testbench: $(SIM_TOP)
+	@echo HDL Sources:   [ $(SRCS) ]
+	@echo SIM sources:   [ $(SIM_SRCS) ]
+	@echo TOP Entity:    [ $(TOP) ]
+	@echo TOP Testbench: [ $(SIM_TOP) ]
 
+CONTAINER ?= vivado:2022.1
 DOCKER_ENV_VARS += -e SRCS=$(SRCS) -e SIM_SRCS=$(SIM_SRCS) -e TOP=$(TOP) -e SIM_TOP=$(SIM_TOP)
 BASEDIR  = $(PRJROOT)
 include ../scripts/docker.mk

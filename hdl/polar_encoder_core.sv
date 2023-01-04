@@ -17,17 +17,18 @@ localparam NSTAGES = $clog2(N);
 genvar stage, bitn;
 wire [NSTAGES-1:0][N-1:0] data;
 
-// Initialize polar encoding mask
 logic [NSTAGES-1:0][N-1:0] mask;
 integer current_bit, current_stage;
 
+// Initialize polar encoding mask
 initial begin
     for (current_bit=0; current_bit < N; current_bit++)
         for (current_stage = 0; current_stage < NSTAGES; current_stage++) 
             mask[current_stage][current_bit] = ~current_bit[current_stage];
 end
 
-for (stage = 0; stage < NSTAGES-1; stage++) begin
+// Main encoder core
+for (stage = 0; stage < NSTAGES-1; stage++) begin : encoder_core
     for (bitn = 0; bitn < N; bitn++)
         assign data[stage+1][bitn] = (mask[stage][bitn]) ? 
             (data[stage][bitn] ^ data[stage][bitn + (1<<stage)]) :
@@ -36,7 +37,6 @@ end
 
 assign data[0] = in;
 assign out = data[NSTAGES-1];
-
 
 
 endmodule
