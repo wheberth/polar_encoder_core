@@ -58,7 +58,6 @@ showsrc:
 	@echo TOP Entity:    [ $(TOP) ]
 	@echo TOP Testbench: [ $(SIM_TOP) ]
 
-CONTAINER ?= vivado:2022.1
 DOCKER_ENV_VARS += -e SRCS=$(SRCS) -e SIM_SRCS=$(SIM_SRCS) -e TOP=$(TOP) -e SIM_TOP=$(SIM_TOP)
 BASEDIR  = $(PRJROOT)
 include ../scripts/docker.mk

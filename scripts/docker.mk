@@ -1,8 +1,9 @@
 DOCKER_RUN = podman run -it --userns=keep-id
-CONTAINER ?= vivado:2022.1
+CONTAINER ?= vivado:2023.1
 BASEDIR ?= $(abspath .)
 WORK = $(shell basename $(BASEDIR))
 DOCKER_ENV_VARS += -e DISPLAY=$$DISPLAY
+DOCKER_ENV_VARS += -v $$HOME/.Xauthority:/home/$$USER/.Xauthority
 DOCKER_OPTS += --net=host
 MAKE_CMD ?= make
 
